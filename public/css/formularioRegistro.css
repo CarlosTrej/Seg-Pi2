@@ -1,0 +1,36 @@
+
+*{
+    font-family: 'B612', sans-serif;
+}
+.formulario-registro{
+    margin: 5% 5%;
+
+    width: 90%;
+    height: 650px;
+    display: grid;
+}
+.formulario{
+    text-align: center;
+    margin: 4% 4%;
+    width: 42;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+}
+.formulario-registro-datos{
+    margin: 4% 4%;
+    background-color: rgb(255, 255, 255);
+    width: 42%;
+    height: 92%;
+}
+.opciones{
+    text-align: center;
+}
+.opciones input{
+    width: 45%;
+    height: 35px;
+}
+input{
+    width: 90%;
+    text-align: center;
+}

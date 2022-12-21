@@ -1,0 +1,31 @@
+
+.cabecera{
+    display: flex;
+    height: 65px;
+    width: 100%;
+}
+.cabecera-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 45%;
+}
+.cabecera-logo-contenedor{
+    height: 100%;
+    width: 33%;
+}
+.cabecera-logo-contenedor img{
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+    width: auto;
+}
+.cabecera-logos-2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+ background-color: aqua; 
+}

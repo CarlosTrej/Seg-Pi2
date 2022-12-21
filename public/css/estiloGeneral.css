@@ -1,0 +1,121 @@
+
+.Contenedorprincipal {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% auto;
+    grid-template-rows: 20% auto 20% 20%;
+
+
+}
+
+a:hover {
+    opacity: .7;
+}
+
+.contenedorIntroduccion {
+
+    height: 15rem;
+    margin: 5px;
+}
+
+.contenedorIntroduccion .impi {
+    margin-left: 10%;
+    width: 80%;
+}
+
+.contenedorIntroduccion img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorNoticia {
+    grid-column: 1/2;
+    height: 10rem;
+    margin: 5px;
+    background-color: #1B396A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedorLogin {
+    grid-column: 2/3;
+    grid-row: -4/-3;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.loginuser {
+    margin-top: 10px;
+    text-align: center;
+    grid-column: 1/3;
+
+
+}
+
+.loginpass {
+    text-align: center;
+    grid-column: 1/3;
+
+}
+
+.campo {
+    width: 90%;
+    border: 1px solid black;
+    box-shadow: -5px 5px 10px rgb(126, 126, 126);
+
+}
+
+.botonlogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #1B396A;
+}
+
+.botonlogin:nth-child(7) {
+    grid-column: 1/3;
+}
+
+.botonlogin:hover {
+    cursor: pointer;
+}
+
+.contenedorLink {
+    margin: 5px;
+    grid-column: 2/3;
+}
+
+
+.linkpatentes {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: 25px auto;
+    border-radius: 5px;
+    background-color: #1B396A;
+
+}
