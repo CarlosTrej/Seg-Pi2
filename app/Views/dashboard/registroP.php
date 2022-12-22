@@ -3,6 +3,8 @@
 
 
 <div class="formulario-registro">
+    
+
     <form action="/">
         <div class="formulario">
             <div class="formulario-registro-datos">
@@ -54,6 +56,7 @@
         <div class="opciones">
             <input type="submit" value="Enviar registro">
         </div>
+        <p>HELLO</p>
     </form>
 
 

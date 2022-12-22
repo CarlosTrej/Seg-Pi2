@@ -1,66 +1,64 @@
+<!-- Aqui va lo principal -->
 
-    <!-- Aqui va lo principal -->
 
-
-    <br>
-   <div class="contenedorRegistroPrincipal" >
-    <fieldset class="contenedorFieldset">
+<br>
+<div class="contenedorRegistroPrincipal" style=" color:#fff; font-weight:600; display:flex;  justify-content: center; margin:2em 5em; border: 1px outset #346FCF;  padding: 2em 1em; border-radius: 2%; background: radial-gradient(circle at center,  #82AAEC , #1A3869) ">
+    <fieldset class="contenedorFieldset" style="display: flex; padding: 1em; text-align: center;">
         <legend class="legendf">Completa los campos</legend>
 
-        <form id="formulario">
-            <div  class="contenedorRegistro">
+        <form id="formulario" action="http://localhost/Seg-Pi2/public/registrarse/insertar" method="post">
+            <div class="contenedorRegistro">
                 <div class=" camporegistro1">
                     <label> Nombre:</label>
-                    <input class="camporegistroin" id="nombre" type="text" placeholder="Ingresa aquí tu tombre(s)">
+                    <input class="camporegistroin" name="nombreR" id="nombre" type="text" placeholder="Ingresa aquí tu nombre(s)" required>
                 </div>
-
-                <div class=" camporegistro2">
+                <div class=" camporegistro2" style="margin: 1em 0;">
                     <label>Apellido Paterno:</label>
-                    <input class="camporegistroin" id="apellidop" type="text" placeholder="Ingresa aquí tu apellido paterno">
+                    <input class="camporegistroin" id="apellidop" type="text" name="paternoR" placeholder="Ingresa aquí tu apellido paterno" required>
                 </div>
 
-                <div class=" camporegistro3">
+                <div class=" camporegistro3" style="margin:2em 0; ">
                     <label>Apellido Materno:</label>
-                    <input class="camporegistroin" id="apellidom" type="text" placeholder="Ingresa aquí tu apellido materno">
+                    <input class="camporegistroin" id="apellidom" name="maternoR" type="text" placeholder="Ingresa aquí tu apellido materno" required>
                 </div>
 
                 <div class=" camporegistro4">
                     <label>Teléfono:</label>
-                    <input class="camporegistroin" id="telefono" type="tel" placeholder="Ingresa tu número celular">
+                    <input class="camporegistroin" id="telefono" type="tel" name="telefonoR" placeholder="Ingresa tu número celular" required>
                 </div>
 
-                <div class="camporegistro5">
+                <div class="camporegistro5" style="margin:1em 0;">
                     <label>Correo:</label>
-                    <input class="camporegistroin" id="correo" type="email" placeholder="Registrate solo con correo institucional">
+                    <input class="camporegistroin" name="correoR" id="correo" type="email" placeholder="Registrate solo con correo institucional" required>
                 </div>
 
-                <div class="camporegistro6">
+                <div class="camporegistro6" style="margin:2em 0;">
                     <label>Contraseña:</label>
-                    <input type="password" name="passwordC" class="camporegistroin" id="passC" placeholder="Ingresa aquí tu contraseña">
+                    <input type="password" name="passwordC" class="camporegistroin" id="passC" placeholder="Ingresa aquí tu contraseña" required>
 
                 </div>
 
-                <div class="camporegistro7">
+                <div class="camporegistro7" style="margin:3em 0;">
 
                     <label>Confirmar Contraseña:</label>
-                    <input type="password" name="passwordC" class="camporegistroin" id="passCC" placeholder="Ingresa de nuevo tu contraseña">
+                    <input type="password" name="passwordCC" class="camporegistroin" id="passCC" placeholder="Ingresa de nuevo tu contraseña" required>
 
                 </div>
 
-                <div class="camporegistro8">
+                <div class="camporegistro8" style="margin:3em 0; ">
                     <label>Rol:</label><br>
-                    <select class="camporegistroin" name="" id="">
-                        <option value="Docente" >Personal Docente</option>
+                    <select class="camporegistroin" name="rolR" id="">
+                        <option value="Docente">Personal Docente</option>
                         <option value="Administrativo">Personal Administrativo</option>
-                        <option value="Estudiante" >Estudiante</option>
+                        <option value="Estudiante">Estudiante</option>
                         <option value="Directivo">Personal Directivo</option>
                     </select>
                 </div>
-    
 
+                <!-- 
                 <div class="camporegistro12">
                     <label>Instituto Tecnológico: </label>
-                    <select class="camporegistroin" name="" id="tecnologico" >
+                    <select class="camporegistroin" name="tecR" id="tecnologico" >
                         <option value=" "> Instituto Tecnológico de Acapulco </option>
                         <option value=" "> Instituto Tecnológico de Agua Prieta</option>
                         <option value=" "> Instituto Tecnológico de Aguascalientes</option>
@@ -318,20 +316,18 @@
                         <option value=" "> Tecnológico de Estudios Superiores de Valle de Bravo</option>
                         <option value=" "> Tecnológico de Estudios Superiores de Villa Guerrero</option>
                     </select>
-                </div>
-                <button class="botonregistro bregistro" type="submit">Registrar</button>
-                <button class="botonregistro blimpiar" type="reset">Limpiar</button>
+                </div> -->
+
+
+                
+                    <button class="botonregistro bregistro" type="submit">Registrar</button>
+                    <button class="botonregistro blimpiar" type="reset">Limpiar</button>
+
 
             </div>
         </form>
 
     </fieldset>
-   </div>
-    <br><br><br><br><br><br><br>
 </div>
-
-
-
-
-
-
+<br><br><br><br><br><br><br>
+</div>

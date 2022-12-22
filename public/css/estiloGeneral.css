@@ -16,7 +16,7 @@ a:hover {
 .contenedorIntroduccion {
 
     height: 15rem;
-    margin: 5px;
+    margin: 5px 5px 0 5px;
 }
 
 .contenedorIntroduccion .impi {
@@ -31,16 +31,8 @@ a:hover {
 }
 
 .contenedorNoticia {
-    grid-column: 1/2;
-    height: 10rem;
-    margin: 5px;
-    background-color: #1B396A;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
+   
+   
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
