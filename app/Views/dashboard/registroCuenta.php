@@ -6,7 +6,7 @@
     <fieldset class="contenedorFieldset" style="display: flex; padding: 1em; text-align: center;">
         <legend class="legendf">Completa los campos</legend>
 
-        <form id="formulario" action="http://localhost/Seg-Pi2/public/registrarse/insertar" method="post">
+        <form id="formulario" action="/Seg-Pi2/public/insertar" method="post">
             <div class="contenedorRegistro">
                 <div class=" camporegistro1">
                     <label> Nombre:</label>
@@ -47,7 +47,7 @@
 
                 <div class="camporegistro8" style="margin:3em 0; ">
                     <label>Rol:</label><br>
-                    <select class="camporegistroin" name="rolR" id="">
+                    <select class="camporegistroin" name="rolR" id="" style="text-align: center;">
                         <option value="Docente">Personal Docente</option>
                         <option value="Administrativo">Personal Administrativo</option>
                         <option value="Estudiante">Estudiante</option>
@@ -317,17 +317,15 @@
                         <option value=" "> Tecnológico de Estudios Superiores de Villa Guerrero</option>
                     </select>
                 </div> -->
-
-
-                
-                    <button class="botonregistro bregistro" type="submit">Registrar</button>
-                    <button class="botonregistro blimpiar" type="reset">Limpiar</button>
-
-
+                <div class="camporegistro12" style="display: flex; flex-direction: row; justify-content:space-around;">
+                    <button id="btnUsuario" class="botonregistro" type="submit" style=" display:flex; align-items: center; cursor: pointer; padding: 0 3em; margin: 0 2em 0 0;">Registrar</button>
+                    <button class="botonregistro" type="reset" style=" display:flex; align-items: center; cursor: pointer; padding: 0 3em; margin: 0 0 0 2em;">Limpiar</button>
+                </div><!-- btnCuenta" -->
+                    
             </div>
         </form>
 
     </fieldset>
 </div>
-<br><br><br><br><br><br><br>
+<br>
 </div>

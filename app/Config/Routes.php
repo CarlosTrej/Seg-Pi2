@@ -40,7 +40,9 @@ $routes->get('/', 'dashboard\inicioController::index');
 $routes->get('/dashboard', 'dashboard\piController::tablero');
 $routes->get('/restablecerContraseña', 'dashboard\piController::contrasenaPerdida');
 $routes->get('/registrarse', 'dashboard\piController::registrarCuenta');
-$routes->get('/dashboard/registrarPatente', 'dashboard\piController::registrarPatente');
+$routes->get('/registrarPatente', 'dashboard\piController::registrarPatente');
+$routes->post('/sendEmail', 'dashboard\piController::correo');
+$routes->post('/insertar', 'dashboard\piController::insertar');
 
 /*
  * --------------------------------------------------------------------

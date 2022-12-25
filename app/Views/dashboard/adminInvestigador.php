@@ -7,7 +7,7 @@
 
                     <!-- <button  type="button" name="registrarpatente" id="registrarpatente" class="btn btn-primary">Registrar patente</button> -->
                     <div class="registrop">
-                        <a class="registrop" href="/Seg-Pi2/public/dashboard/registrarPatente">Registrar patente</a>
+                        <a class="registrop" href="/Seg-Pi2/public/registrarPatente">Registrar patente</a>
                     </div>
                 </div>
             </div>
