@@ -28,7 +28,7 @@ DROP TABLE IF EXISTS `sistema_seg_pi`.`cat_cpat` ;
 CREATE TABLE IF NOT EXISTS `sistema_seg_pi`.`cat_cpat` (
   `cpat` VARCHAR(100) NOT NULL,
   `ins_centro` VARCHAR(100) NULL DEFAULT NULL,
-  `responsable` VARCHAR(100) NULL DEFAULT NULL,
+  `responsable` INT AUTOINCREMENT,
   PRIMARY KEY (`cpat`),
   INDEX `responsable` (`responsable` ASC) VISIBLE,
   INDEX `ins_centro` (`ins_centro` ASC) VISIBLE)
@@ -100,7 +100,7 @@ DROP TABLE IF EXISTS `sistema_seg_pi`.`proyecto` ;
 
 CREATE TABLE IF NOT EXISTS `sistema_seg_pi`.`proyecto` (
   `proyecto` VARCHAR(100) NOT NULL,
-  `solicitante` VARCHAR(100) NULL DEFAULT NULL,
+  `solicitante` INT ,
   `tipo_proyecto` VARCHAR(10) NOT NULL,
   `descripcion` VARCHAR(200) NULL DEFAULT NULL,
   `cpat_asoc` VARCHAR(100) NOT NULL,
@@ -123,9 +123,9 @@ COLLATE = utf8mb4_0900_ai_ci;
 DROP TABLE IF EXISTS `sistema_seg_pi`.`usuario_sistema` ;
 
 CREATE TABLE IF NOT EXISTS `sistema_seg_pi`.`usuario_sistema` (
-  `usuario` VARCHAR(100) NOT NULL,
+  `usuario` INT AUTOINCREMENT NOT NULL,
   `password` VARCHAR(300) NULL DEFAULT NULL,
-  `inst_centro` VARCHAR(100) NOT NULL,
+  `inst_centro` VARCHAR(100),
   `nombre` VARCHAR(40) NULL DEFAULT NULL,
   `apellidoP` VARCHAR(40) NULL DEFAULT NULL,
   `apellidoM` VARCHAR(40) NULL DEFAULT NULL,
