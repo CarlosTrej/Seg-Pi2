@@ -74,14 +74,14 @@ class piController extends BaseController
                 //Server settings
                 $mail->SMTPDebug = SMTP::DEBUG_SERVER;                   
                 $mail->isSMTP();                                            
-                $mail->Host       = 'mail.rhsac.com';                    
+                $mail->Host       = 'smtp.office365.com';                    
                 $mail->SMTPAuth   = true;                                   
-                $mail->Username   = 'sistemapatentestecnm@rhsac.com';                   
-                $mail->Password   = 'holaquease';                             
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           
-                $mail->Port       = 465;                                   
+                $mail->Username   = 'sistemapatentestecnm@outlook.com';                   
+                $mail->Password   = 'Holaquease';                             
+                $mail->SMTPSecure = 'STARTTLS';           
+                $mail->Port       = 587;                                   
                 //Recipients
-                $mail->setFrom('sistemapatentestecnm@rhsac.com', 'TecNM');
+                $mail->setFrom('sistemapatentestecnm@outlook.com', 'TecNM');
                 $mail->addAddress($emailDestino);     
                 //Content
                 $mail->isHTML(true);                                  
